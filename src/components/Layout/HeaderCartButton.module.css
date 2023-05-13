@@ -28,6 +28,7 @@
   border-radius: 25px;
   margin-left: 1rem;
   font-weight: bold;
+  font-family: sans-serif;
 }
 
 .button:hover .badge,
@@ -40,7 +41,7 @@
 }
 
 .cart {
-  font-family: 'Josefin Sans';
+  font-family: sans-serif;
 }
 
 @keyframes bump {
