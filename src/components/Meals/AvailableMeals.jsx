@@ -5,10 +5,8 @@ import MealItem from './MealItem/MealItem';
 
 export const AvailableMeals = () => {
   const [meals, setMeals] = useState([]);
-<<<<<<< HEAD
+
   const [isLoading, setIsLoading] = useState(true);
-=======
->>>>>>> 27113fd1dc135e571314628b3eb55e966e6bb7d9
 
   useEffect(() => {
     const fetchMeals = async () => {
@@ -26,23 +24,20 @@ export const AvailableMeals = () => {
         });
       }
       setMeals(loadedMeals);
-<<<<<<< HEAD
+
       setIsLoading(false);
-=======
->>>>>>> 27113fd1dc135e571314628b3eb55e966e6bb7d9
     };
     fetchMeals();
   }, []);
 
-<<<<<<< HEAD
   if (isLoading) {
-    <section className={classes.MealsLoading}>
-      <p>Loading...</p>
-    </section>;
+    return (
+      <section className={classes.MealsLoading}>
+        <p>Loading...</p>
+      </section>
+    );
   }
 
-=======
->>>>>>> 27113fd1dc135e571314628b3eb55e966e6bb7d9
   const mealsList = meals.map((meal) => (
     <MealItem
       key={meal.id}
