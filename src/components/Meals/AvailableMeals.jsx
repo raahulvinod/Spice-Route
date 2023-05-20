@@ -10,7 +10,9 @@ export const AvailableMeals = () => {
 
   useEffect(() => {
     const fetchMeals = async () => {
-      const response = await fetch(process.env.REACT_APP_FIREBASE_DB);
+      const response = await fetch(
+        'https://react-http-1c4f8-default-rtdb.asia-southeast1.firebasedatabase.app/meals.json'
+      );
 
       if (!response.ok) {
         throw new Error('Something went wrong!');
